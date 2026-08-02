@@ -28,8 +28,8 @@ backend = "SoapySdr"
 [phy_io.soapysdr]
 # Transmit tx(dl) and rx(ul) frequencies in Hz
 # !!! Make sure to also edit all related fields in the cell_info section to fit this frequency.
-tx_freq = 438362500
-rx_freq = 431362500
+tx_freq = 438450000
+rx_freq = 431450000
 ppm_err = 0                       # Adjust if your SDR has a non-negligible tuning error
 sample_rate = 600000
 device = "driver=sx,label=sx"
@@ -70,11 +70,12 @@ device = "driver=sx,label=sx"
 
 [net_info]
 # Mobile Country Code (MCC) - identifies your country
-mcc = 901
+mcc = 204
 
 # Mobile Network Code (MNC) - identifies the TETRA network
 # MAKE SURE MNC MAY BE USED, CONSULT RELEVANT AUTHORITIES IF NEEDED
-mnc = 9999
+mnc = 7373
+
 
 # Cell Information
 [cell_info]
